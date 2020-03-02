@@ -7,4 +7,5 @@ import (
 
 func SetSlackRoutes(router *gin.RouterGroup) {
 	router.GET("/slack", slack.Get)
+	router.POST("/slack", slack.Post)
 }
